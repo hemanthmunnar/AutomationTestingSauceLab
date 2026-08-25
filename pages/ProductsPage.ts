@@ -4,7 +4,7 @@ export class ProductsPage {
   constructor(private page: Page) {}
 
   async sortLowToHigh() {
-    await this.page.selectOption('//select[@class="product_sort_container"]', 'lohi');
+    await this.page.selectOption('select[data-test="product-sort-container"]', 'lohi');
   }
 
   async addCheapestTwo() {
